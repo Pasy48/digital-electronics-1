@@ -1,4 +1,4 @@
-# Lab 2: YOUR_FIRSTNAME LASTNAME
+# Lab 2: Martin   Paseka
 
 ### 2-bit comparator
 
@@ -6,11 +6,12 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![K-maps](![image](https://user-images.githubusercontent.com/99723445/155152237-7c15bbde-3f44-4b5b-8d56-7ddca50bb286.png)
 
    Less than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![K-maps]![image](https://user-images.githubusercontent.com/99723445/155152458-ec326089-b8a3-47f0-9347-492dc79b7859.png)
+
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 

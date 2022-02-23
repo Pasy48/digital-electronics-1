@@ -65,7 +65,9 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99723445/155422641-acf0c7fa-1476-466e-b99b-9e4f935da32b.png)
+   ![image](https://user-images.githubusercontent.com/99723445/155422686-b0095885-5c59-4f75-8147-32a95e394f0b.png)
+
 
 3. Link to your public EDA Playground example:
 

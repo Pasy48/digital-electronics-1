@@ -5,24 +5,15 @@
 1. Listing of VHDL architecture from source file `mux_3bit_4to1.vhd`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-p_stimulus : process
-    begin
+architecture Behavioral of mux_2bit_4to1 is
+begin
+       f_o <= a_i when (sel_i = "00" ) else
+              b_i when (sel_i = "01" ) else
+              c_i when (sel_i = "10" ) else
+              d_i;
 
-        s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
-        s_sel <= "00"; wait for 100 ns;
-        
-        s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
-        s_sel <= "10"; wait for 100 ns;
-        
-        s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
-        s_sel <= "01"; wait for 100 ns;
-        
-        s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
-        s_sel <= "11"; wait for 100 ns;
-        
-        wait;
-    end process p_stimulus;
 end architecture Behavioral;
+
 ```
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!

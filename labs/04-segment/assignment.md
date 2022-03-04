@@ -5,6 +5,7 @@
 The Nexys A7 board provides two four-digit common anode seven-segment LED displays (configured to behave like a single eight-digit display).
 
 1. See [schematic](https://github.com/tomas-fryza/digital-electronics-1/blob/master/docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board and find out the connection of 7-segment displays, ie to which FPGA pins are connected and how. Draw the schematic with 7-segment displays.
+
 ![image](https://user-images.githubusercontent.com/99723445/156777239-53ee5daf-005d-42da-b921-3b68271e504c.png)
 ![image](https://user-images.githubusercontent.com/99723445/156777282-0dd4b5cd-5bd4-4bec-a96d-1133f960ec23.png)
 

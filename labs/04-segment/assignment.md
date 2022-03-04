@@ -20,6 +20,8 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
 | CG | L18 |
 | DP | H15 |
 
+![image](https://user-images.githubusercontent.com/99723445/156778031-47f95980-2a53-4700-8644-07c0b6d6edd5.png)
+
 | **Anoda** | **FPGA pin** |
 | :-: | :-: |
 | AN7 | U13 |

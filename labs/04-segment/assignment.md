@@ -9,6 +9,28 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
 ![image](https://user-images.githubusercontent.com/99723445/156777239-53ee5daf-005d-42da-b921-3b68271e504c.png)
 ![image](https://user-images.githubusercontent.com/99723445/156777282-0dd4b5cd-5bd4-4bec-a96d-1133f960ec23.png)
 
+| **Katoda** | **FPGA pin** |
+| :-: | :-: |
+| CA | T10 |
+| CB | R10 |
+| CC | K16 |
+| CD | K13 |
+| CE | P15 |
+| CF | T11 |
+| CG | L18 |
+| DP | H15 |
+
+| **Anoda** | **FPGA pin** |
+| :-: | :-: |
+| AN7 | U13 |
+| AN6 | K2 |
+| AN5 | T14 |
+| AN4 | P14 |
+| AN3 | J14 |
+| AN2 | T9 |
+| AN1 | J18 |
+| AN0 | J17 |
+
 2. Complete the decoder truth table for **common anode** 7-segment display.
 
    | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |

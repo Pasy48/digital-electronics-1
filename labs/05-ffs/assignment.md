@@ -14,13 +14,12 @@
    \end{align*}
    -->
 
-   **D-type FF**
-   | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](images/eq_uparrow.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | ![rising](images/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
+   | **CLK** | **D** | **Qn** | **Q(n+1)** | **Comments** |
+   | :-: | :-: | :-: | :-: | :-: |
+   | ↑ | 0 | 0 | 0 | No change |
+   | ↑ | 0 | 1 | 0 | Set |
+   | ↑ | 1 | 0 | 1 | Set |
+   | ↑ | 1 | 1 | 1 | No change |
 
    **JK-type FF**
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |

@@ -5,6 +5,7 @@
 1. Write characteristic equations and complete truth tables for D, JK, T flip-flops where `q(n)` represents main output value before the clock edge and `q(n+1)` represents output value after the clock edge.
 
  The characteristic equation of edge-triggered D-type ﬂip-ﬂop is:
+ 
  ![image](https://user-images.githubusercontent.com/99723445/158189963-dd7b8625-4ae2-4467-abbb-c3b7aeccef0d.png)
 
    <!--

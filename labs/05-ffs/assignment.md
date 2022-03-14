@@ -25,6 +25,10 @@
    | ↑ | 1 | 1 | 1 | No change |
 
    **JK-type FF**
+   The characteristic equation of edge-triggered JK-type ﬂip-ﬂop is:
+   
+   ![image](https://user-images.githubusercontent.com/99723445/158190191-a3a34ed5-b045-4c08-b40f-8ca54a323b4b.png)
+   
    | **CLK** | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-: |
    | ↑ | 0 | 0 | 0 | 0 | No change |

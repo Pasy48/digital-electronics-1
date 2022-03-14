@@ -65,18 +65,88 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-    p_stimulus : process
+ p_stimulus : process
     begin
         report "Stimulus process started" severity note;
 
-        -- First test case
+        -- 1. test case
         s_hex <= "0000"; wait for 50 ns;
         assert (s_seg = "0000001")
         report "Input combination 0000 FAILED" severity error;
-
-
-        -- WRITE OTHER TEST CASES HERE
-
+        
+        -- 2. test case
+        s_hex <= "0001"; wait for 50 ns;
+        assert (s_seg = "1001111")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 3. test case
+        s_hex <= "0010"; wait for 50 ns;
+        assert (s_seg = "0000110")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 4. test case
+        s_hex <= "0011"; wait for 50 ns;
+        assert (s_seg = "1000111")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 5. test case
+        s_hex <= "0100"; wait for 50 ns;
+        assert (s_seg = "1001100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 6. test case
+        s_hex <= "0101"; wait for 50 ns;
+        assert (s_seg = "0100100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 7. test case
+        s_hex <= "0110"; wait for 50 ns;
+        assert (s_seg = "0100000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 8. test case
+        s_hex <= "0111"; wait for 50 ns;
+        assert (s_seg = "0001111")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 9. test case
+        s_hex <= "1000"; wait for 50 ns;
+        assert (s_seg = "0000000")
+        report "Input combination 0000 FAILED" severity error;
+        -- 10. test case
+        s_hex <= "1001"; wait for 50 ns;
+        assert (s_seg = "0000100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 11. test case
+        s_hex <= "1010"; wait for 50 ns;
+        assert (s_seg = "0001000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 12. test case
+        s_hex <= "1011"; wait for 50 ns;
+        assert (s_seg = "1100000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 13. test case
+        s_hex <= "1100"; wait for 50 ns;
+        assert (s_seg = "0110001")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 14. test case
+        s_hex <= "1101"; wait for 50 ns;
+        assert (s_seg = "1000010")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 15. test case
+        s_hex <= "1110"; wait for 50 ns;
+        assert (s_seg = "0110000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- 16. test case
+        s_hex <= "1111"; wait for 50 ns;
+        assert (s_seg = "0111000")
+        report "Input combination 0000 FAILED" severity error;
 
         report "Stimulus process finished" severity note;
         wait;
@@ -85,7 +155,7 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![My_figure](prubehy.PNG)
 
 ### LED(7:4) indicators
 
@@ -96,14 +166,14 @@ The Nexys A7 board provides two four-digit common anode seven-segment LED displa
    -- Experiments on your own: LED(7:4) indicators
 
    -- Turn LED(4) on if input value is equal to 0, ie "0000"
-   -- LED(4) <= `0` when WRITE YOUR CODE HERE
+      LED(4) <= '1' when SW = "0000";
 
    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-   -- LED(5) <= WRITE YOUR CODE HERE
+      LED(5) <= '1' when SW > "1001";
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-   -- LED(6) <= WRITE YOUR CODE HERE
+      LED(6) <= '1' when SW(0) = '1';
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-   -- LED(7) <= WRITE YOUR CODE HERE
+      LED(7) <= '1' when SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000";
    ```

@@ -25,6 +25,7 @@
    | ↑ | 1 | 1 | 1 | No change |
 
    **JK-type FF**
+   
    The characteristic equation of edge-triggered JK-type ﬂip-ﬂop is:
    
    ![image](https://user-images.githubusercontent.com/99723445/158190191-a3a34ed5-b045-4c08-b40f-8ca54a323b4b.png)
@@ -41,6 +42,11 @@
    | ↑ | 1 | 1 | 1 | 0 | Invert (Toggle) |
 
    **T-type FF**
+   
+   The characteristic equation of edge-triggered T-type ﬂip-ﬂop is:
+   
+   ![image](https://user-images.githubusercontent.com/99723445/158190343-f35b26ea-967f-47cb-8f3e-1cf2fe93c096.png)
+
    | **CLK** | **T** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: |
    | ↑ | 0 | 0 | 0 | No change |

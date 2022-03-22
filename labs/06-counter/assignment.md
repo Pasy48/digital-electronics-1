@@ -55,7 +55,7 @@ The Nexys A7 board provides five push buttons for user applications.
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99723445/159506851-17bdbc1a-e36c-4436-898b-b95e6ad1b585.png)
 
 ### Two counters
 

@@ -32,8 +32,8 @@ begin
             q     => s_d_q,
             q_bar => s_d_q_bar
         );
-        
-      uut_t_ff_rst : entity work.t_ff_rst
+    
+    uut_t_ff_rst : entity work.t_ff_rst
         port map(
             clk   => s_clk_100MHz,
             rst   => s_rst,
@@ -41,7 +41,7 @@ begin
             q     => s_t_q,
             q_bar => s_t_q_bar
         );
-
+        
     --------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------
@@ -77,73 +77,18 @@ begin
     -- Data generation process
     --------------------------------------------------------
     p_stimulus : process
-begin
-    report "Stimulus process started" severity note;
-    
-    -- Test data input 
-    s_t <= '1'; 
-    wait for 20 ns;
-    -- Expected output
-    assert ((s_q = '1') and (s_q_bar = '0'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=0" severity error;
-
-    wait for 10 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=0" severity error;
-    wait for 50 ns;
-    
-    s_t <= '0'; 
-    wait for 30 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=0, rst=0" severity error;
-    
-    -- Test reset
-    s_t <= '1'; 
-    wait for 10 ns;   
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=1" severity error;
-    
-    wait for 25 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=1" severity error;
-    
-    wait for 25 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=1" severity error;
-    
-    wait for 25 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=1" severity error;
-    
-    wait for 20 ns;
-    assert ((s_q = '1') and (s_q_bar = '0'))
-    -- If false, then report an error
-    report "Test failed for t=1, rst=0" severity error;
-    
-    wait for 30 ns;
-
-    s_t <= '0'; 
-    wait for 10 ns;
-    -- Expected output
-    assert ((s_q = '0') and (s_q_bar = '1'))
-    -- If false, then report an error
-    report "Test failed for t=0, rst=0" severity error;
-
-    report "Stimulus process finished" severity note;
-    wait;
-end process p_stimulus;
+    begin
+        report "Stimulus process started" severity note;
+        
+        s_data <='0'; wait for 50 ns;
+        s_data <='1'; wait for 50 ns;
+        s_data <='1'; wait for 25 ns;
+        s_data <='0'; wait for 25 ns;
+        s_data <='1'; wait for 25 ns;
+        s_data <='1'; wait for 25 ns;
+       
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 
 end architecture testbench;

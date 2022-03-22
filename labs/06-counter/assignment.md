@@ -57,6 +57,9 @@ The Nexys A7 board provides five push buttons for user applications.
 
    ![image](https://user-images.githubusercontent.com/99723445/159506945-83d4e1c6-62f8-4f78-ada8-cba4c6f43b8a.png)
 
+![image](https://user-images.githubusercontent.com/99723445/159514365-b40a36a5-b5e2-4f1b-9cca-55d0d0c1f689.png)
+
+
 ### Two counters
 
 1. Image of the top layer structure including both counters, ie a 4-bit bidirectional counter from *Part 4* and a 16-bit counter with a 10 ms time base from *Experiments on your own*. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!

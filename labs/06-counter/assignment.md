@@ -57,8 +57,7 @@ The Nexys A7 board provides five push buttons for user applications.
 
    ![image](https://user-images.githubusercontent.com/99723445/159506945-83d4e1c6-62f8-4f78-ada8-cba4c6f43b8a.png)
 
-![image](https://user-images.githubusercontent.com/99723445/159514365-b40a36a5-b5e2-4f1b-9cca-55d0d0c1f689.png)
-
+![image](https://user-images.githubusercontent.com/99723445/159514440-ca256815-f5f2-4e8d-9641-c06846b30eac.png)
 
 ### Two counters
 

@@ -93,7 +93,7 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99723445/161530585-006e2ba6-595a-42d1-8cca-3b02ac7dba64.png)
 
 ### Eight-digit driver
 

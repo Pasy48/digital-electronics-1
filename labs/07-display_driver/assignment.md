@@ -99,4 +99,4 @@ end architecture Behavioral;
 
 1. Image of the 8-digit driver's block schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components, and internal signals!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99723445/161535783-14874860-83c7-46ca-b2f7-72a8a697e85d.png)

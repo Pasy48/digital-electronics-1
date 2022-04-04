@@ -11,7 +11,7 @@
 
 2. See [schematic](https://github.com/tomas-fryza/digital-electronics-1/blob/master/docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board and find out to which FPGA pins Pmod ports JA, JB, JC, and JD are connected.
 
-<a name="part1"></a>
+![image](https://user-images.githubusercontent.com/99723445/161537583-ed2d5c71-ebca-4b0c-af21-6e416ea3bad3.png)
 
 ### Traffic light controller
 
